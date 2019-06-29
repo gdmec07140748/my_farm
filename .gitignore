@@ -1,2 +1,3 @@
-public/Upload/
-public/VueSign/
+/fram/vendor/
+/vendor/
+.idea
