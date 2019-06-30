@@ -1,6 +1,7 @@
 <?php
 
 use co\src\coki\route\SingletonInjector;
+use SebastianBergmann\Timer\Timer;
 
 
 /**
@@ -15,6 +16,8 @@ function run(string $index, string $fun)
     $injector = SingletonInjector::getInstance();
     $index = $injector->make($index);
     dump($index->$fun());
+    $memory = Timer::resourceUsage();
+    dump($memory);
 }
 
 function add_controller_prefix(string $class)
