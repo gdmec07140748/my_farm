@@ -1,6 +1,5 @@
 <?php
 
-use Co\src\Coki\db\Connect;
 use co\src\coki\route\SingletonInjector;
 
 
@@ -10,7 +9,6 @@ use co\src\coki\route\SingletonInjector;
  * Date: 2019/6/29
  * Time: 22:02
  */
-
 
 function run(string $index, string $fun)
 {

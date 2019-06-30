@@ -34,7 +34,7 @@ $uri = rawurldecode($uri);
 // http://demo.myfram.com/user/1
 // array(3) { [0]=> int(1) [1]=> array(2) { [0]=> string(20) "app\index\controller" [1]=> string(5) "index" } [2]=> array(1) { ["id"]=> string(1) "1" } }
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
-var_dump($routeInfo);
+//var_dump($routeInfo);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
         echo '... 404 Not Found';

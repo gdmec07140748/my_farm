@@ -8,17 +8,24 @@
 
 namespace app\index\model;
 
-
 use co\src\coki\route\SingletonInjector;
 use Illuminate\Database\Eloquent\Model;
 
 class BaseModel extends Model
 {
+    /**
+     * @var SingletonInjector
+     */
+    public static $instance;
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-        $injector = SingletonInjector::getInstance();
-        $injector->execute('co\src\coki\db\Connect::getConn',[]);
+        if (null == static::$instance) {
+            static::$instance = SingletonInjector::getInstance();
+            // 有参数传法
+            static::$instance->execute('co\src\coki\db\Connect::getConn',[]);
+        }
     }
 
 }

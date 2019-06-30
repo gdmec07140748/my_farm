@@ -11,6 +11,11 @@ namespace co\src\coki\route;
 
 use Auryn\Injector;
 
+/**
+ *  获取注入类单例
+ * Class SingletonInjector
+ * @package co\src\coki\route
+ */
 class SingletonInjector
 {
     /**
