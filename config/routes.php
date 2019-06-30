@@ -13,7 +13,9 @@ $dispatcher = FastRoute\simpleDispatcher(
     function (FastRoute\RouteCollector $r) {
         $r->addRoute('GET', '/users', 'handle');
         // {id} must be a number (\d+)
-        $r->addRoute(['GET', 'POST'], '/user/{id:\d+}',['Index', 'index']);
+        $r->addRoute(['GET', 'POST'], '/index/{id:\d+}',['Index', 'index']);
+
+        $r->addRoute(['GET', 'POST'], '/user/{id:\d+}',['User', 'index']);
         // The /{title} suffix is optional
         $r->addRoute('GET', '/articles/{id:\d+}[/{title}]', 'get_article_handler');
     }

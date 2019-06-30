@@ -1,4 +1,9 @@
 <?php
+
+use Co\src\Coki\db\Connect;
+use co\src\coki\route\SingletonInjector;
+
+
 /**
  * Created by PhpStorm.
  * User: user
@@ -9,7 +14,7 @@
 
 function run(string $index, string $fun)
 {
-    $injector = new \Auryn\Injector();
+    $injector = SingletonInjector::getInstance();
     $index = $injector->make($index);
     dump($index->$fun());
 }
@@ -21,5 +26,7 @@ function add_controller_prefix(string $class)
 
 function dump($var)
 {
+    echo "<pre>";
     var_dump($var);
+    echo "</pre>";
 }

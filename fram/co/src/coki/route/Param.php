@@ -3,17 +3,18 @@
  * Created by PhpStorm.
  * User: user
  * Date: 2019/6/28
- * Time: 21:40
+ * Time: 21:27
  */
 
-namespace Co\src\Coki\route;
+namespace co\src\coki\route;
 
 
 
-use Co\src\Coki\route\inter\IParam;
+use co\src\coki\route\inter\IParam;
 
-class ParamAdapter implements IParam
+class Param implements IParam
 {
+
 
     public function next()
     {

@@ -5,7 +5,7 @@
  * Date: 2019/6/22
  * Time: 0:10
  */
-namespace Co\src\Coki;
+namespace co\src\coki;
 
 class Loader
 {

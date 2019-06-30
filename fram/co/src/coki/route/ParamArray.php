@@ -5,16 +5,16 @@
  * Date: 2019/6/28
  * Time: 21:18
  */
-namespace Co\src\Coki\route;
+namespace co\src\coki\route;
 
-use Co\src\Coki\route\inter\IParam;
-use Co\src\Coki\route\inter\ToolParam;
-use Co\src\Coki\tool\ClassPath;
+use co\src\coki\route\inter\IParam;
+use co\src\coki\route\inter\ToolParam;
+use co\src\coki\tool\ClassPath;
 
 /**
  * 接收路由参数
  * Class ParamArray
- * @package Co\src\Coki\route
+ * @package co\src\coki\route
  */
 class ParamArray implements IParam, ToolParam
 {

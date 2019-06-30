@@ -9,7 +9,7 @@
 namespace app\index\controller;
 
 
-class Student
+class Student extends Base
 {
     public function index()
     {

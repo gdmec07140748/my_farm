@@ -6,10 +6,10 @@
  * Time: 21:53
  */
 
-namespace Co\src\Coki\route\inter;
+namespace co\src\coki\route\inter;
 
 
-use Co\src\Coki\tool\ClassPath;
+use co\src\coki\tool\ClassPath;
 
 interface ToolParam
 {

@@ -5,12 +5,12 @@
  * Date: 2019/6/28
  * Time: 21:45
  */
-namespace Co\src\Coki\tool;
+namespace co\src\coki\tool;
 
 /**
  * 路径处理
  * Class ClassPath
- * @package Co\src\Coki\route
+ * @package co\src\coki\route
  */
 class ClassPath
 {
@@ -19,5 +19,4 @@ class ClassPath
         return '\app\index\controller'.$class;
     }
 
-}
 }

@@ -6,7 +6,7 @@
  * Time: 22:08
  */
 
-namespace Co\src\Coki\db;
+namespace co\src\coki\db;
 use Illuminate\Container\Container;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Events\Dispatcher;
@@ -14,7 +14,7 @@ use Illuminate\Events\Dispatcher;
 /**
  * 数据库连接类
  * Class Connect
- * @package Co\src\Coki\db
+ * @package co\src\coki\db
  */
 class Connect
 {

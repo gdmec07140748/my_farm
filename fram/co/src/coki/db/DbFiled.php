@@ -6,38 +6,20 @@
  * Time: 22:20
  */
 
-namespace Co\src\Coki\db;
+namespace co\src\coki\db;
 
 
 class DbFiled
 {
     public $driver = 'mysql';
     public $host = 'localhost';
-    public $database = 'database';
+    public $database = 'joy';
     public $username = 'root';
-    public $password = 'password';
+    public $password = 'root';
     public $charset = 'utf8';
     public $collation = 'utf8_unicode_ci';
-    public $prefix = 'public';
+    public $prefix = 'joy_';
     public  $conn;
-
-    /**
-     * Connect constructor.
-     * @param string $host
-     * @param string $database
-     * @param string $username
-     * @param string $password
-     * @param string $prefix
-     */
-    public function __construct(string $host, string $database, string $username, string $password, string $prefix)
-    {
-        $this->host = $host;
-        $this->database = $database;
-        $this->username = $username;
-        $this->password = $password;
-        $this->prefix = $prefix;
-    }
-
 
     /**
      * @return string
